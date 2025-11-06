@@ -40,15 +40,35 @@ final class EventDetailsViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // If the storyboard scene has old subviews, remove them so only code-built UI remains
+        view.subviews.forEach { $0.removeFromSuperview() }
+
         view.backgroundColor = .white
         navigationItem.title = "Event Details"
+
+        // Make the nav bar opaque so content doesn't appear under it
+        if let navBar = navigationController?.navigationBar {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()      // always opaque
+            appearance.backgroundColor = .white             // white nav bar
+            appearance.titleTextAttributes = [
+                .foregroundColor: UIColor.black,
+                .font: UIFont.systemFont(ofSize: 17, weight: .semibold)
+            ]
+            appearance.shadowColor = .clear                 // optional: remove bottom line
+
+            navBar.standardAppearance = appearance
+            navBar.scrollEdgeAppearance = appearance        // IMPORTANT: same appearance for scroll edge
+            navBar.compactAppearance = appearance
+        }
 
         setupScrollView()
         setupAllCards()
         setupDatePickers()
         setupContinueButton()
 
-        // Prefill when the picker opens (nice UX)
+        // Prefill when the picker opens
         startDateTextField.addTarget(self, action: #selector(editingBegan(_:)), for: .editingDidBegin)
         endDateTextField.addTarget(self, action: #selector(editingBegan(_:)), for: .editingDidBegin)
     }
@@ -104,19 +124,16 @@ final class EventDetailsViewController: UIViewController {
                   textField: budgetTextField, placeholder: "₹1,00,000",
                   topAnchor: guestCountCard.bottomAnchor, topConstant: 16)
 
-        // keyboards + delegate filters
         guestCountTextField.keyboardType = .numberPad
         budgetTextField.keyboardType = .numberPad
         guestCountTextField.delegate = self
         budgetTextField.delegate = self
-
         startDateTextField.delegate = self
         endDateTextField.delegate = self
 
         setupDateCards()
     }
 
-    // Generic card
     private func setupCard(card: UIView, label: UILabel, labelText: String,
                            textField: UITextField, placeholder: String,
                            topAnchor: NSLayoutYAxisAnchor, topConstant: CGFloat) {
@@ -149,7 +166,6 @@ final class EventDetailsViewController: UIViewController {
         card.bottomAnchor.constraint(equalTo: textField.bottomAnchor, constant: 12).isActive = true
     }
 
-    // Card with interactive trailing button
     private func setupCardWithTrailingButton(card: UIView, label: UILabel, labelText: String,
                                              textField: UITextField, placeholder: String,
                                              systemImage: String, action: Selector,
@@ -179,7 +195,6 @@ final class EventDetailsViewController: UIViewController {
         button.setImage(UIImage(systemName: systemImage), for: .normal)
         button.addTarget(self, action: action, for: .touchUpInside)
         button.tintColor = UIColor(white: 0.6, alpha: 1)
-        // expand tap target
         button.hitTestPadding = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         rightContainer.addSubview(button)
         NSLayoutConstraint.activate([
@@ -292,12 +307,10 @@ final class EventDetailsViewController: UIViewController {
         textField.textColor = .systemPurple
         textField.translatesAutoresizingMaskIntoConstraints = false
 
-        // left padding
         let left = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: 36))
         textField.leftView = left
         textField.leftViewMode = .always
 
-        // tappable calendar rightView
         let rightContainer = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 36))
         rightContainer.isUserInteractionEnabled = true
         let btn = UIButton(type: .system)
@@ -325,7 +338,7 @@ final class EventDetailsViewController: UIViewController {
         ])
     }
 
-    // MARK: - Pickers (simple & reliable)
+    // MARK: - Pickers
     private func setupDatePickers() {
         startPicker.tag = 1
         endPicker.tag  = 2
@@ -340,7 +353,6 @@ final class EventDetailsViewController: UIViewController {
         startDateTextField.inputView = startPicker
         endDateTextField.inputView = endPicker
 
-        // Toolbar with Cancel / Done
         startDateTextField.inputAccessoryView = makePickerToolbar(doneSelector: #selector(doneStart))
         endDateTextField.inputAccessoryView   = makePickerToolbar(doneSelector: #selector(doneEnd))
     }
@@ -370,7 +382,7 @@ final class EventDetailsViewController: UIViewController {
     @objc private func cancelPicker() { view.endEditing(true) }
 
     @objc private func doneStart() {
-        dateChanged(startPicker) // ensures update even if user didn't scroll
+        dateChanged(startPicker)
         view.endEditing(true)
     }
 
@@ -379,7 +391,6 @@ final class EventDetailsViewController: UIViewController {
         view.endEditing(true)
     }
 
-    // Prefill when picker just opened
     @objc private func editingBegan(_ tf: UITextField) {
         let f = DateFormatter(); f.dateStyle = .medium
         if tf === startDateTextField {
@@ -391,7 +402,7 @@ final class EventDetailsViewController: UIViewController {
         }
     }
 
-    // MARK: - Button Actions
+    // MARK: - Actions
     @objc private func locationTapped() {
         let alert = UIAlertController(title: "Set Location", message: "Type a place or address", preferredStyle: .alert)
         alert.addTextField { tf in
@@ -410,12 +421,12 @@ final class EventDetailsViewController: UIViewController {
 
     @objc private func startIconTapped() {
         startDateTextField.becomeFirstResponder()
-        dateChanged(startPicker) // optional prefill/update
+        dateChanged(startPicker)
     }
 
     @objc private func endIconTapped() {
         endDateTextField.becomeFirstResponder()
-        dateChanged(endPicker) // optional prefill/update
+        dateChanged(endPicker)
     }
 
     // MARK: - Continue
@@ -470,40 +481,16 @@ final class EventDetailsViewController: UIViewController {
 
 // MARK: - Delegates / Validators
 extension EventDetailsViewController: UITextFieldDelegate {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool { true }
 
-    // IMPORTANT: no recursive calls here
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        // Date fields: just prefill (if empty) and allow editing
-        if textField === startDateTextField || textField === endDateTextField {
-            let f = DateFormatter(); f.dateStyle = .medium
-            if textField === startDateTextField {
-                if (startDateTextField.text ?? "").isEmpty {
-                    startDateTextField.text = f.string(from: startPicker.date)
-                    startDateTextField.textColor = .systemPurple
-                }
-            } else {
-                if (endDateTextField.text ?? "").isEmpty {
-                    endDateTextField.text = f.string(from: endPicker.date)
-                    endDateTextField.textColor = .systemPurple
-                }
-            }
-            return true
-        }
-        return true
-    }
-
-    // Digit-only inputs for Guest Count and Budget
     func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,
                    replacementString string: String) -> Bool {
-        // Always allow backspace
-        if string.isEmpty { return true }
+        if string.isEmpty { return true } // backspace
 
         if textField === guestCountTextField || textField === budgetTextField {
             return CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: string))
         }
-
-        // Do not allow manual edits for date fields
         if textField === startDateTextField || textField === endDateTextField {
             return false
         }
@@ -511,9 +498,8 @@ extension EventDetailsViewController: UITextFieldDelegate {
     }
 }
 
-// Expand tap target for the right-view buttons (clean version)
+// Expand tap target for the right-view buttons
 final class HitTestButton: UIButton {
-    // Positive values expand the tappable area
     var hitTestPadding: UIEdgeInsets = .zero
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         let larger = bounds.inset(by: UIEdgeInsets(top: -hitTestPadding.top,
