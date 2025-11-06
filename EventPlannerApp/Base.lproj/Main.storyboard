@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UzA-Dl-Ygl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ywl-0a-oZf">
     <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -780,7 +781,6 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                                         <rect key="frame" x="0.0" y="0.0" width="338" height="44"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="PSL-V9-KhR"/>
                                             <constraint firstAttribute="height" constant="44" id="Vxb-bQ-hVg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -846,12 +846,6 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="ohA-D4-PzM" firstAttribute="leading" secondItem="OT5-BM-iwH" secondAttribute="leadingMargin" constant="32" id="59N-mW-Q8N"/>
-                                    <constraint firstItem="zhg-qE-19O" firstAttribute="leading" secondItem="OT5-BM-iwH" secondAttribute="leadingMargin" constant="32" id="64Z-FJ-044"/>
-                                    <constraint firstItem="zhg-qE-19O" firstAttribute="trailing" secondItem="OT5-BM-iwH" secondAttribute="trailingMargin" constant="32" id="c8I-Sw-RnV"/>
-                                    <constraint firstItem="ohA-D4-PzM" firstAttribute="trailing" secondItem="OT5-BM-iwH" secondAttribute="trailingMargin" constant="32" id="vlB-wP-8mI"/>
-                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Planner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAF-vS-lUy">
                                 <rect key="frame" x="124" y="228" width="154" height="28.666666666666686"/>
@@ -922,13 +916,13 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Ke-VG-b7A">
                                         <rect key="frame" x="12" y="12" width="330" height="96"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="New to Event Planner?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyB-Q6-jBK">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="New to Event Planner?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyB-Q6-jBK">
                                                 <rect key="frame" x="74.000000000000014" y="0.0" width="182.33333333333337" height="28.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Create an account to start planning your next event." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzT-b3-YKw">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account to start planning your next event." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzT-b3-YKw">
                                                 <rect key="frame" x="8" y="36.333333333333371" width="314.33333333333331" height="15.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="textColor"/>
@@ -1039,6 +1033,176 @@ our Features , manage and Explore New vendors, and track your progress in one pl
             </objects>
             <point key="canvasLocation" x="-359.70149253731341" y="-523.11212814645307"/>
         </scene>
+        <!--Buiisness View Controller-->
+        <scene sceneID="IhA-Sh-2lI">
+            <objects>
+                <viewController storyboardIdentifier="BuiisnessViewController" id="Ywl-0a-oZf" customClass="BuiisnessViewController" customModule="EventPlannerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tRm-MK-SF5">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dvQ-UI-2gz">
+                                <rect key="frame" x="24" y="148" width="354" height="619.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Business Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGT-2N-Ry8">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="G77-fe-b6n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us about your business to get started." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zE-Hp-Ebv">
+                                        <rect key="frame" x="0.0" y="60" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TIK-jS-Fh5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLQ-CC-T9p">
+                                        <rect key="frame" x="0.0" y="120" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2Xh-3t-roe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your business name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fod-ju-EMP">
+                                        <rect key="frame" x="0.0" y="180" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="o8I-xF-yZc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRd-gv-6Cj">
+                                        <rect key="frame" x="0.0" y="240" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ffS-fA-gmm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your business address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jDk-YS-SnY">
+                                        <rect key="frame" x="0.0" y="300" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="56e-Ff-xxk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <imageReference key="background" image="location" catalog="system" symbolScale="small"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEb-67-GqX">
+                                        <rect key="frame" x="0.0" y="360" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="c4z-Cd-3iG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="https://example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V1w-NR-Ivh">
+                                        <rect key="frame" x="0.0" y="420" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8Yz-k5-dxc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1G-u3-Geu">
+                                        <rect key="frame" x="0.0" y="480" width="354" height="20.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="EWG-fg-p3X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMe-u1-wIh">
+                                        <rect key="frame" x="0.0" y="510.33333333333337" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="p8o-oV-4r2"/>
+                                        </constraints>
+                                        <string key="placeholder">Tell your Vendors a little about your 
+business...</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chL-6Z-upi">
+                                        <rect key="frame" x="0.0" y="570.33333333333337" width="354" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="3c7-HV-LKF"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.5834960938" green="0.3696289062" blue="0.9208984375" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButtons:" destination="Ywl-0a-oZf" eventType="touchUpInside" id="AqF-Qx-PvB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6R6-BP-tcy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dvQ-UI-2gz" firstAttribute="top" secondItem="6R6-BP-tcy" secondAttribute="top" constant="24" id="5zy-5c-6xa"/>
+                            <constraint firstItem="6R6-BP-tcy" firstAttribute="bottom" secondItem="dvQ-UI-2gz" secondAttribute="bottom" constant="24" id="IoL-wn-awS"/>
+                            <constraint firstItem="6R6-BP-tcy" firstAttribute="trailing" secondItem="dvQ-UI-2gz" secondAttribute="trailing" constant="24" id="djE-Bs-MvX"/>
+                            <constraint firstItem="dvQ-UI-2gz" firstAttribute="leading" secondItem="6R6-BP-tcy" secondAttribute="leading" constant="24" id="j8C-nk-HxX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutusLabel" destination="d1G-u3-Geu" id="FLE-aK-PCk"/>
+                        <outlet property="aboutusTextField" destination="DMe-u1-wIh" id="nAL-IU-cDS"/>
+                        <outlet property="buisnessAddressLabel" destination="IRd-gv-6Cj" id="kbB-aF-LJ5"/>
+                        <outlet property="buisnessAddressTextField" destination="jDk-YS-SnY" id="Edi-TA-tCW"/>
+                        <outlet property="businessNameLabel" destination="gLQ-CC-T9p" id="aDG-8h-bae"/>
+                        <outlet property="businessNameTextField" destination="Fod-ju-EMP" id="S8I-G1-kWW"/>
+                        <outlet property="businessSubtitle" destination="4zE-Hp-Ebv" id="SUx-11-wis"/>
+                        <outlet property="businessTitle" destination="AGT-2N-Ry8" id="0WY-OF-o5k"/>
+                        <outlet property="nextButton" destination="chL-6Z-upi" id="FaR-dQ-WpK"/>
+                        <outlet property="websiteLabel" destination="HEb-67-GqX" id="leh-sq-mhW"/>
+                        <outlet property="websiteTextField" destination="V1w-NR-Ivh" id="ZWd-Pe-2gn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoH-T9-vTN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7231" y="780"/>
+        </scene>
         <!--Confirmation View Controller-->
         <scene sceneID="eey-XJ-ceC">
             <objects>
@@ -1052,7 +1216,7 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2b-JP-NBv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7597" y="833"/>
+            <point key="canvasLocation" x="8807" y="806"/>
         </scene>
     </scenes>
     <resources>
@@ -1064,6 +1228,7 @@ our Features , manage and Explore New vendors, and track your progress in one pl
         <image name="google_logo" width="416" height="277.33334350585938"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="location" catalog="system" width="128" height="119"/>
         <image name="onboarding_image" width="341.33334350585938" height="512"/>
         <image name="payment_card" width="341.33334350585938" height="341.33334350585938"/>
         <image name="service_inventory" width="341.33334350585938" height="512"/>
