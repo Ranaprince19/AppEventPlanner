@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		BC0DA78F2EB79BB7008A8B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0DA7702EB79BB5008A8B28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC0DA7772EB79BB5008A8B28;
+			remoteInfo = EventPlannerApp;
+		};
+		BC0DA7992EB79BB7008A8B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0DA7702EB79BB5008A8B28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC0DA7772EB79BB5008A8B28;
+			remoteInfo = EventPlannerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC0DA7782EB79BB5008A8B28 /* EventPlannerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventPlannerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0DA78E2EB79BB7008A8B28 /* EventPlannerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventPlannerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0DA7982EB79BB7008A8B28 /* EventPlannerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventPlannerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BC0DA7A02EB79BB7008A8B28 /* Exceptions for "EventPlannerApp" folder in "EventPlannerApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BC0DA7772EB79BB5008A8B28 /* EventPlannerApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BC0DA77A2EB79BB5008A8B28 /* EventPlannerApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BC0DA7A02EB79BB7008A8B28 /* Exceptions for "EventPlannerApp" folder in "EventPlannerApp" target */,
+			);
+			path = EventPlannerApp;
+			sourceTree = "<group>";
+		};
+		BC0DA7912EB79BB7008A8B28 /* EventPlannerAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EventPlannerAppTests;
+			sourceTree = "<group>";
+		};
+		BC0DA79B2EB79BB7008A8B28 /* EventPlannerAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EventPlannerAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC0DA7752EB79BB5008A8B28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0DA78B2EB79BB7008A8B28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0DA7952EB79BB7008A8B28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC0DA76F2EB79BB5008A8B28 = {
+			isa = PBXGroup;
+			children = (
+				BC0DA77A2EB79BB5008A8B28 /* EventPlannerApp */,
+				BC0DA7912EB79BB7008A8B28 /* EventPlannerAppTests */,
+				BC0DA79B2EB79BB7008A8B28 /* EventPlannerAppUITests */,
+				BC0DA7792EB79BB5008A8B28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC0DA7792EB79BB5008A8B28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC0DA7782EB79BB5008A8B28 /* EventPlannerApp.app */,
+				BC0DA78E2EB79BB7008A8B28 /* EventPlannerAppTests.xctest */,
+				BC0DA7982EB79BB7008A8B28 /* EventPlannerAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC0DA7772EB79BB5008A8B28 /* EventPlannerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0DA7A12EB79BB7008A8B28 /* Build configuration list for PBXNativeTarget "EventPlannerApp" */;
+			buildPhases = (
+				BC0DA7742EB79BB5008A8B28 /* Sources */,
+				BC0DA7752EB79BB5008A8B28 /* Frameworks */,
+				BC0DA7762EB79BB5008A8B28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BC0DA77A2EB79BB5008A8B28 /* EventPlannerApp */,
+			);
+			name = EventPlannerApp;
+			packageProductDependencies = (
+			);
+			productName = EventPlannerApp;
+			productReference = BC0DA7782EB79BB5008A8B28 /* EventPlannerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC0DA78D2EB79BB7008A8B28 /* EventPlannerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0DA7A62EB79BB7008A8B28 /* Build configuration list for PBXNativeTarget "EventPlannerAppTests" */;
+			buildPhases = (
+				BC0DA78A2EB79BB7008A8B28 /* Sources */,
+				BC0DA78B2EB79BB7008A8B28 /* Frameworks */,
+				BC0DA78C2EB79BB7008A8B28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC0DA7902EB79BB7008A8B28 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BC0DA7912EB79BB7008A8B28 /* EventPlannerAppTests */,
+			);
+			name = EventPlannerAppTests;
+			packageProductDependencies = (
+			);
+			productName = EventPlannerAppTests;
+			productReference = BC0DA78E2EB79BB7008A8B28 /* EventPlannerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC0DA7972EB79BB7008A8B28 /* EventPlannerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0DA7A92EB79BB7008A8B28 /* Build configuration list for PBXNativeTarget "EventPlannerAppUITests" */;
+			buildPhases = (
+				BC0DA7942EB79BB7008A8B28 /* Sources */,
+				BC0DA7952EB79BB7008A8B28 /* Frameworks */,
+				BC0DA7962EB79BB7008A8B28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC0DA79A2EB79BB7008A8B28 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BC0DA79B2EB79BB7008A8B28 /* EventPlannerAppUITests */,
+			);
+			name = EventPlannerAppUITests;
+			packageProductDependencies = (
+			);
+			productName = EventPlannerAppUITests;
+			productReference = BC0DA7982EB79BB7008A8B28 /* EventPlannerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC0DA7702EB79BB5008A8B28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					BC0DA7772EB79BB5008A8B28 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					BC0DA78D2EB79BB7008A8B28 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = BC0DA7772EB79BB5008A8B28;
+					};
+					BC0DA7972EB79BB7008A8B28 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = BC0DA7772EB79BB5008A8B28;
+					};
+				};
+			};
+			buildConfigurationList = BC0DA7732EB79BB5008A8B28 /* Build configuration list for PBXProject "EventPlannerApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC0DA76F2EB79BB5008A8B28;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BC0DA7792EB79BB5008A8B28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC0DA7772EB79BB5008A8B28 /* EventPlannerApp */,
+				BC0DA78D2EB79BB7008A8B28 /* EventPlannerAppTests */,
+				BC0DA7972EB79BB7008A8B28 /* EventPlannerAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC0DA7762EB79BB5008A8B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0DA78C2EB79BB7008A8B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0DA7962EB79BB7008A8B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC0DA7742EB79BB5008A8B28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0DA78A2EB79BB7008A8B28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0DA7942EB79BB7008A8B28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC0DA7902EB79BB7008A8B28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC0DA7772EB79BB5008A8B28 /* EventPlannerApp */;
+			targetProxy = BC0DA78F2EB79BB7008A8B28 /* PBXContainerItemProxy */;
+		};
+		BC0DA79A2EB79BB7008A8B28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC0DA7772EB79BB5008A8B28 /* EventPlannerApp */;
+			targetProxy = BC0DA7992EB79BB7008A8B28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC0DA7A22EB79BB7008A8B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EventPlannerApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SRMIST-DemoVK.EventPlannerApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC0DA7A32EB79BB7008A8B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EventPlannerApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SRMIST-DemoVK.EventPlannerApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC0DA7A42EB79BB7008A8B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC0DA7A52EB79BB7008A8B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC0DA7A72EB79BB7008A8B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SRMIST-DemoVK.EventPlannerAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventPlannerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EventPlannerApp";
+			};
+			name = Debug;
+		};
+		BC0DA7A82EB79BB7008A8B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SRMIST-DemoVK.EventPlannerAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventPlannerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EventPlannerApp";
+			};
+			name = Release;
+		};
+		BC0DA7AA2EB79BB7008A8B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SRMIST-DemoVK.EventPlannerAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventPlannerApp;
+			};
+			name = Debug;
+		};
+		BC0DA7AB2EB79BB7008A8B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SRMIST-DemoVK.EventPlannerAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventPlannerApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC0DA7732EB79BB5008A8B28 /* Build configuration list for PBXProject "EventPlannerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0DA7A42EB79BB7008A8B28 /* Debug */,
+				BC0DA7A52EB79BB7008A8B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0DA7A12EB79BB7008A8B28 /* Build configuration list for PBXNativeTarget "EventPlannerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0DA7A22EB79BB7008A8B28 /* Debug */,
+				BC0DA7A32EB79BB7008A8B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0DA7A62EB79BB7008A8B28 /* Build configuration list for PBXNativeTarget "EventPlannerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0DA7A72EB79BB7008A8B28 /* Debug */,
+				BC0DA7A82EB79BB7008A8B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0DA7A92EB79BB7008A8B28 /* Build configuration list for PBXNativeTarget "EventPlannerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0DA7AA2EB79BB7008A8B28 /* Debug */,
+				BC0DA7AB2EB79BB7008A8B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC0DA7702EB79BB5008A8B28 /* Project object */;
+}
