@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T6S-Ms-1AK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NQr-ay-Fno">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
@@ -888,7 +888,7 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="is7-JK-qbC">
-                                        <rect key="frame" x="5.3333333333333428" y="47.666666666666742" width="215.99999999999997" height="35.666666666666657"/>
+                                        <rect key="frame" x="5.3333333333333428" y="47.666666666666742" width="216" height="35.666666666666657"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple_logo" translatesAutoresizingMaskIntoConstraints="NO" id="7uE-70-5hL">
                                                 <rect key="frame" x="0.0" y="3" width="30" height="30"/>
@@ -1041,7 +1041,7 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dvQ-UI-2gz">
-                                <rect key="frame" x="24" y="142" width="345" height="618"/>
+                                <rect key="frame" x="24" y="142" width="345" height="633"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Business Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGT-2N-Ry8">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
@@ -1141,7 +1141,7 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMe-u1-wIh">
-                                        <rect key="frame" x="0.0" y="540" width="345" height="19"/>
+                                        <rect key="frame" x="0.0" y="540" width="345" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="p8o-oV-4r2"/>
                                         </constraints>
@@ -1157,7 +1157,7 @@ business...</string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chL-6Z-upi">
-                                        <rect key="frame" x="0.0" y="569" width="345" height="49"/>
+                                        <rect key="frame" x="0.0" y="584" width="345" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="3c7-HV-LKF"/>
                                         </constraints>
@@ -1263,14 +1263,14 @@ business...</string>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pmE-JF-n4T" secondAttribute="trailing" constant="20" symbolic="YES" id="o31-F0-FxE"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sub-Services" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujr-44-fIg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Sub-Services" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujr-44-fIg">
                                 <rect key="frame" x="20" y="338" width="103" height="21.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wij-Hf-0I9">
-                                <rect key="frame" x="328" y="331.66666666666669" width="54" height="34.333333333333314"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wij-Hf-0I9">
+                                <rect key="frame" x="328" y="331.66666666666669" width="45" height="34.333333333333314"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
@@ -1515,8 +1515,8 @@ business...</string>
                                     <action selector="closeTapped:" destination="NQr-ay-Fno" eventType="editingDidEndOnExit" id="mGZ-ed-bXk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Sub-Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vG-li-xVU">
-                                <rect key="frame" x="119" y="134" width="164" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Sub-Services" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vG-li-xVU">
+                                <rect key="frame" x="119.00000000000001" y="134" width="164.33333333333337" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1601,7 +1601,6 @@ business...</string>
                             <constraint firstItem="Yhu-pq-MNl" firstAttribute="leading" secondItem="rb8-C3-E26" secondAttribute="leading" constant="16" id="HQT-aO-JZv"/>
                             <constraint firstItem="6vG-li-xVU" firstAttribute="top" secondItem="rb8-C3-E26" secondAttribute="top" constant="16" id="Ldd-Ye-85R"/>
                             <constraint firstItem="AlI-Lg-Nia" firstAttribute="leading" secondItem="rb8-C3-E26" secondAttribute="leading" constant="24" id="PUq-eT-sYc"/>
-                            <constraint firstItem="rb8-C3-E26" firstAttribute="trailing" secondItem="6vG-li-xVU" secondAttribute="trailing" constant="110" id="TqG-Ye-d1s"/>
                             <constraint firstItem="AlI-Lg-Nia" firstAttribute="top" secondItem="E6G-B2-uuP" secondAttribute="bottom" constant="24" id="Vbz-49-XvI"/>
                             <constraint firstItem="E6G-B2-uuP" firstAttribute="leading" secondItem="rb8-C3-E26" secondAttribute="leading" constant="24" id="Xqz-w1-G6u"/>
                             <constraint firstItem="6vG-li-xVU" firstAttribute="leading" secondItem="Yhu-pq-MNl" secondAttribute="trailing" constant="79" id="a2h-Ln-rVF"/>
@@ -1609,6 +1608,7 @@ business...</string>
                             <constraint firstItem="rb8-C3-E26" firstAttribute="trailing" secondItem="AlI-Lg-Nia" secondAttribute="trailing" constant="24" id="bbp-UA-a7V"/>
                             <constraint firstItem="rb8-C3-E26" firstAttribute="trailing" secondItem="E6G-B2-uuP" secondAttribute="trailing" constant="24" id="dhT-Bh-uj9"/>
                             <constraint firstItem="E6G-B2-uuP" firstAttribute="top" secondItem="6vG-li-xVU" secondAttribute="bottom" constant="40" id="t4A-AO-gip"/>
+                            <constraint firstItem="rb8-C3-E26" firstAttribute="trailing" secondItem="6vG-li-xVU" secondAttribute="trailing" constant="109.67" id="thQ-NP-Met"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1621,7 +1621,7 @@ business...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mt8-tK-wEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3060" y="511"/>
+            <point key="canvasLocation" x="3058.7786259541986" y="510.56338028169017"/>
         </scene>
         <!--Event Details View Controller-->
         <scene sceneID="EOw-2s-JTD">
@@ -2109,7 +2109,7 @@ business...</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kgx-ce-LUf">
-                                        <rect key="frame" x="5.3333333333333428" y="47.666666666666742" width="215.99999999999997" height="35.666666666666657"/>
+                                        <rect key="frame" x="5.3333333333333428" y="47.666666666666742" width="216" height="35.666666666666657"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple_logo" translatesAutoresizingMaskIntoConstraints="NO" id="RrZ-ge-UmQ">
                                                 <rect key="frame" x="0.0" y="3" width="30" height="30"/>
