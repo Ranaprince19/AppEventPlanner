@@ -109,7 +109,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dEo-PM-DsL">
-                                <rect key="frame" x="24" y="148" width="354" height="570"/>
+                                <rect key="frame" x="24" y="148" width="354" height="580"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebJ-AR-ChQ">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="60"/>
@@ -142,7 +142,6 @@
                                             <constraint firstItem="OY1-eZ-HxZ" firstAttribute="top" secondItem="LBB-x0-5ff" secondAttribute="top" constant="12" id="9tS-k9-e6k"/>
                                             <constraint firstAttribute="trailing" secondItem="OY1-eZ-HxZ" secondAttribute="trailing" constant="12" id="9vk-d1-Dg3"/>
                                             <constraint firstItem="OY1-eZ-HxZ" firstAttribute="leading" secondItem="LBB-x0-5ff" secondAttribute="leading" constant="12" id="Fqt-bY-LPZ"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="bkW-fg-gnu"/>
                                             <constraint firstAttribute="height" constant="200" id="pM3-iw-wFn"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -171,10 +170,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAf-ZR-Qzq">
-                                        <rect key="frame" x="0.0" y="520" width="354" height="50"/>
+                                        <rect key="frame" x="0.0" y="520" width="354" height="60"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="mih-AL-ZeL"/>
+                                            <constraint firstAttribute="height" constant="60" id="mih-AL-ZeL"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -826,13 +825,13 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g3-ld-muK">
-                                                <rect key="frame" x="8" y="54.000000000000007" width="104" height="20.333333333333336"/>
+                                                <rect key="frame" x="8" y="54.000000000000007" width="98.666666666666671" height="20.333333333333336"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QoR-0d-3BM">
-                                                <rect key="frame" x="120" y="0.0" width="50" height="128"/>
+                                                <rect key="frame" x="114.66666666666664" y="0.0" width="55.333333333333329" height="128"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReY-i9-x1E">
@@ -1042,7 +1041,7 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dvQ-UI-2gz">
-                                <rect key="frame" x="24" y="148" width="354" height="633"/>
+                                <rect key="frame" x="24" y="148" width="354" height="634"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Business Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGT-2N-Ry8">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
@@ -1142,7 +1141,7 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMe-u1-wIh">
-                                        <rect key="frame" x="0.0" y="540" width="354" height="34"/>
+                                        <rect key="frame" x="0.0" y="540" width="354" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="p8o-oV-4r2"/>
                                         </constraints>
@@ -1158,9 +1157,9 @@ business...</string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chL-6Z-upi">
-                                        <rect key="frame" x="0.0" y="584" width="354" height="49"/>
+                                        <rect key="frame" x="0.0" y="600" width="354" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="49" id="3c7-HV-LKF"/>
+                                            <constraint firstAttribute="height" constant="50" id="3c7-HV-LKF"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -1350,7 +1349,7 @@ business...</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. Photography" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-FT-jX1">
-                                                <rect key="frame" x="33" y="103.33333333333334" width="350" height="34"/>
+                                                <rect key="frame" x="33" y="103.33333333333334" width="139" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1437,7 +1436,7 @@ business...</string>
                                             <constraint firstItem="Vy2-Se-67r" firstAttribute="leading" secondItem="boU-qf-NaA" secondAttribute="leading" constant="33" id="7Wy-yG-VFn"/>
                                             <constraint firstItem="fAn-Xk-yI7" firstAttribute="top" secondItem="6bq-FT-jX1" secondAttribute="bottom" constant="32" id="ALI-pM-K4x"/>
                                             <constraint firstAttribute="trailing" secondItem="fAn-Xk-yI7" secondAttribute="trailing" constant="18.670000000000002" id="Ccc-52-CMM"/>
-                                            <constraint firstAttribute="trailing" secondItem="6bq-FT-jX1" secondAttribute="trailing" constant="18.670000000000002" id="E0f-Y7-bul"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6bq-FT-jX1" secondAttribute="trailing" symbolic="YES" id="E0f-Y7-bul"/>
                                             <constraint firstItem="Z07-9V-DBC" firstAttribute="top" secondItem="WKT-tU-AdH" secondAttribute="bottom" constant="32" id="GpI-xj-7zX"/>
                                             <constraint firstItem="Vy2-Se-67r" firstAttribute="top" secondItem="Lhr-vx-aYl" secondAttribute="bottom" constant="7.6699999999999999" id="JWc-kX-vnK"/>
                                             <constraint firstItem="WKT-tU-AdH" firstAttribute="top" secondItem="boU-qf-NaA" secondAttribute="top" constant="8" id="UyR-0r-e9q"/>
