@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YcU-v3-3eH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jkx-eN-7C3">
     <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
@@ -642,7 +642,7 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fT-Ue-Aws" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7407.4626865671635" y="-60.411899313501138"/>
+            <point key="canvasLocation" x="4228" y="664"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="gyz-5y-BK2">
@@ -739,6 +739,9 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                                                 <integer key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextTapped:" destination="VUF-xD-YOa" eventType="touchUpInside" id="d0q-ZD-JIA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1093,7 +1096,7 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your business address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jDk-YS-SnY">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your business address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jDk-YS-SnY" customClass="NoCaretTextField" customModule="EventPlannerApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="300" width="354" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="56e-Ff-xxk"/>
@@ -1141,7 +1144,7 @@ our Features , manage and Explore New vendors, and track your progress in one pl
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMe-u1-wIh">
-                                        <rect key="frame" x="0.0" y="540" width="354" height="50"/>
+                                        <rect key="frame" x="0.0" y="540" width="354" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="p8o-oV-4r2"/>
                                         </constraints>
@@ -1157,12 +1160,12 @@ business...</string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chL-6Z-upi">
-                                        <rect key="frame" x="0.0" y="600" width="354" height="34"/>
+                                        <rect key="frame" x="0.0" y="584" width="354" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="3c7-HV-LKF"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <buttonConfiguration key="configuration" style="plain" title="Continue">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.5834960938" green="0.3696289062" blue="0.9208984375" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
@@ -1200,7 +1203,7 @@ business...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hoH-T9-vTN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8149.2537313432831" y="779.86270022883286"/>
+            <point key="canvasLocation" x="2201" y="-523"/>
         </scene>
         <!--Confirmation View Controller-->
         <scene sceneID="eey-XJ-ceC">
